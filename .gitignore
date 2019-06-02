@@ -63,6 +63,7 @@ typings/
 # editor generated stuff
 .idea
 .vscode
+.DS_Store
 
 # simple html file for naive / manual testing
 index.html
