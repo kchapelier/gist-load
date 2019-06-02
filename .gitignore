@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# editor generated stuff
+.idea
+.vscode
+
+# simple html file for naive / manual testing
+index.html
