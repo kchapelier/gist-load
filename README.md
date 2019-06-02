@@ -4,7 +4,7 @@ Load the content of a Gist file in the browser.
 
 **Features**
 
- * Does not use the Github API, does not require API tokens.
+ * Does not use the Github API, does not require an API token.
  * No dependency.
  * Written in conservative ES5.
  * Small bundle size.
@@ -12,7 +12,7 @@ Load the content of a Gist file in the browser.
 **Warning**
 
 Github may break this at any time so it isn't recommended to use this in any critical project.
-It is perfect to maintain a list of presets for creative coding projects and the likes though.
+It is perfect to maintain an external list of presets for creative coding projects and the likes though.
 
 ## Installing
 
@@ -24,7 +24,7 @@ npm install gist-load --production
 
 ## Examples
 
-### Load json from a gist with a single file
+### Load json from a Gist with a single file
 
 ```js
 const gistLoad = require('gist-load');
@@ -42,7 +42,7 @@ gistLoad(
 ```
 
 
-### Load text from a gist with multiple files
+### Load text from a Gist with multiple files
 
 ```js
 const gistLoad = require('gist-load');
@@ -68,10 +68,10 @@ Load the content of a gist file.
 **Arguments**
 
  * **options :**
-   * *url :* Url of the Gist
-   * *file :* Name of the file (necessary for Gist with multiple files)
-   * *contentType :* `string` or `json`, default to `string`
-   * *cache :* Whether to cache the result of the query, default to `false`
+   * *url :* String. Url of the Gist (mandatory)
+   * *file :* String. Name of the file (mandatory for Gist with multiple files)
+   * *contentType :* String. `string` or `json`, default to `string`
+   * *cache :* Boolean. Whether to cache the result of the query, default to `false`
  * **callback :** A node-style / error-first callback.
 
 ## History
